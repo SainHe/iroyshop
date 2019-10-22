@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1196849",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1901677",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "f030c",
+      "unicode_decimal": 983820
+    },
+    {
+      "icon_id": "2127167",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "4399999",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "5122094",
+      "name": "课程",
+      "font_class": "kecheng-",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5269226",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "6263290",
+      "name": "栏目管理",
+      "font_class": "lanmuguanli",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "7155220",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "7369271",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "7473692",
+      "name": "权限管理",
+      "font_class": "quanxianguanli",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7765170",
+      "name": "学校_教师",
+      "font_class": "xuexiao_jiaoshi",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}

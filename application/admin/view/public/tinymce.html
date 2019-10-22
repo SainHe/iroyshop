@@ -1,0 +1,50 @@
+<script src='/static/tinymce/tinymce.min.js'></script>
+<script>
+    // layui.use('layedit', function () {
+    //     var layedit = layui.layedit;
+    //     //上傳圖片介面：注意：layedit.set 一定要放在 build前面，否則配置全域性介面將無效
+    //     layedit.set({
+    //         uploadImage: {
+    //             url: '/admin/index/uploadImg', //介面url
+    //             type: 'post', //預設post
+    //         }
+    //     });
+    //     //建立編輯器
+    //     layedit.build('tiny'), {
+    //         width: 600,
+    //         height: 180 //設定編輯器高度
+    //     }; //建立編輯器
+
+    // });
+    tinymce.init({
+        selector: '#tiny',
+        //skin:'oxide-dark',
+        language: 'zh_CN',
+        plugins: 'print preview searchreplace autolink directionality visualblocks visualchars image link media template code codesample table charmap hr pagebreak nonbreaking anchor insertdatetime advlist lists wordcount imagetools textpattern help paste emoticons autosave autoresize',
+        toolbar: 'code undo redo restoredraft | cut copy paste pastetext | forecolor backcolor bold italic underline strikethrough link anchor | alignleft aligncenter alignright alignjustify outdent indent | \
+                      formatselect fontselect fontsizeselect | bullist numlist | blockquote subscript superscript removeformat | \
+                     table image media charmap emoticons hr pagebreak insertdatetime print preview wordcount',
+        height: 650, //编辑器高度
+        min_height: 400,
+        fontsize_formats: '12px 14px 16px 18px 24px 36px 48px 56px 72px',
+        font_formats: '微软雅黑=Microsoft YaHei,Helvetica Neue,PingFang SC,sans-serif;苹果苹方=PingFang SC,Microsoft YaHei,sans-serif;宋体=simsun,serif;仿宋体=FangSong,serif;黑体=SimHei,sans-serif;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats;',
+        importcss_append: true,
+        //为内容模板插件提供预置模板
+        templates: [
+            { title: '模板1', description: '介绍文字1', content: '模板内容' },
+            { title: '模板2', description: '介绍文字2', content: '<div class="mceTmpl"><span class="cdate">CDATE</span>，<span class="mdate">MDATE</span>，我的内容</div>' }
+        ],
+        //
+        template_cdate_format: '[CDATE: %m/%d/%Y : %H:%M:%S]',
+        template_mdate_format: '[MDATE: %m/%d/%Y : %H:%M:%S]',
+        autosave_ask_before_unload: false,
+        toolbar_drawer: false,
+        menubar: true,
+        removed_menuitems: 'help',
+        statusbar: false,
+        images_upload_url: '/admin/index/uploadImg',
+        images_upload_base_path: '/static/uploads/tinymce/',
+        
+
+    });
+</script>

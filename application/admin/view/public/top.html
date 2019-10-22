@@ -1,0 +1,37 @@
+<div class="layui-header">
+    <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item layadmin-flexible" id="leftSide" lay-unselect="">
+            <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+                <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+            </a>
+        </li>
+        <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+            <a href="/index" target="_blank" title="网站首页">
+                <i class="layui-icon layui-icon-website"></i>
+            </a>
+        </li>
+        <li class="layui-nav-item" lay-unselect="">
+            <a href="javascript:window.location.reload();" title="刷新页面">
+                <i class="layui-icon layui-icon-refresh-3"></i>
+            </a>
+        </li>
+        <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+            <a href="javascript:;" id="full" title="全屏">
+                <i class="layui-icon layui-icon-screen-full"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
+        <li class="layui-nav-item" lay-unselect="">
+            <a href="javascript:;">
+                <cite>admin</cite>
+                <span class="layui-nav-more"></span>
+            </a>
+            <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                <dd><a href="/index" target="_blank">访问首页</a></dd>
+                <dd><a href="">修改密码</a></dd>
+                <dd><a href="/admin/login/logout">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
